@@ -40,15 +40,21 @@ section {
 
 #movies-introduction-table {
   margin-top: 30px;
-  display: flex;
-  justify-self: center;
-  align-items: center;
+  width: 100%;
+}
+
+#movies-introduction-table tr:first-child {
+  height: 100px;
 }
 
 #movies-table-box {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.poster {
+  width: 600px;
 }
 
 th,
@@ -61,30 +67,13 @@ tr {
   height: 200px;
 }
 
-tr td:first-child {
-  width: 100px;
-}
-
-tr td:nth-child(2) {
-  width: 200px;
-}
-
-tr td:nth-child(3) {
-  width: 200px;
-}
-
-tr td:nth-child(4) {
-  width: 300px;
-  padding: 20px;
+td {
+  min-width: 150px;
+  padding: 10px;
 }
 
 tr td:last-child {
-  width: 100px;
   color: rgb(106, 40, 193);
-}
-
-.poster {
-  width: 100%;
 }
 
 #movie-choice-form-section {
