@@ -1,0 +1,99 @@
+@import "./reset.css";
+* {
+  box-sizing: border-box;
+}
+
+main {
+  margin: 0 100px;
+  font-size: 1.2rem;
+}
+
+section {
+  border: 2px solid black;
+  border-bottom: 0;
+  padding: 20px;
+}
+
+.primary-button {
+  background-color: rgb(84, 84, 84);
+  width: 100px;
+  height: 30px;
+  font-weight: 800;
+  color: white;
+  border-radius: 4px;
+}
+
+.flex {
+  display: flex;
+  padding-right: 30px;
+}
+
+#self-introduction-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#movies-introduction-section {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+th,
+td {
+  border: 2px solid black;
+}
+
+tr {
+  text-align: center;
+  height: 200px;
+}
+
+tr td:first-child {
+  width: 100px;
+}
+
+tr td:nth-child(2) {
+  width: 200px;
+}
+
+tr td:nth-child(3) {
+  width: 300px;
+}
+
+tr td:nth-child(4) {
+  width: 300px;
+  padding: 20px;
+}
+
+tr td:last-child {
+  width: 300px;
+  color: rgb(106, 40, 193);
+}
+
+.poster {
+  width: 100%;
+}
+
+#movie-choice-form-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#name-input {
+  border: 1px solid black;
+  width: 80%;
+  height: 30px;
+}
+
+#button-container {
+  display: flex;
+  gap: 20px;
+}
+
+label {
+  font-weight: 700;
+}
