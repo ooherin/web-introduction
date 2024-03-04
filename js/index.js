@@ -33,14 +33,15 @@ $submitButton.addEventListener("click", () => {
 
 const submitInputs = () => {
   if (!validateNameInputVacant()) {
-    return alert("이름을 먼저 입력해 주세요!");
+    alert("이름을 먼저 입력해 주세요!");
+    $nameInput.focus();
+    return;
   }
   checkMovieMatch();
   resetInputs();
 };
 
 const checkMovieMatch = () => {
-  //이 함수가 실행될 때 검사를 해야 되서 여기서 선택을 해야 함.
   const $sameMovies = document.querySelectorAll(
     'input[type="checkbox"]:checked'
   );
